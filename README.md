@@ -1,1 +1,2 @@
-# aulas_jpa_hibernate
+# Aulas de JPA e Hibernate
+**Criando CRUDs.
