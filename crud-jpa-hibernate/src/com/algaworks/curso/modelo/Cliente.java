@@ -1,9 +1,13 @@
 package com.algaworks.curso.modelo;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Cliente {
@@ -15,6 +19,8 @@ public class Cliente {
 	private Integer idade;
 	private String Sexo;
 	private String profissao;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date dataNascimento;
 	
 	
 	public Long getCodigo() {
@@ -47,4 +53,11 @@ public class Cliente {
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
 	}
+	public Date getDataNascimento() {
+		return dataNascimento;
+	}
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+	
 }
