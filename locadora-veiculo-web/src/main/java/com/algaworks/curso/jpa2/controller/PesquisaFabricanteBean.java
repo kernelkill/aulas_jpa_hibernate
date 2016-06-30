@@ -32,13 +32,13 @@ public class PesquisaFabricanteBean implements Serializable {
 	}
 	
 	public void excluir() {
-		/*try {
+		try {
 			fabricanteDAO.excluir(fabricanteSelecionado);
 			this.fabricantes.remove(fabricanteSelecionado);
 			FacesUtil.addSuccessMessage("Fabricante " + fabricanteSelecionado.getNome() + " excluído com sucesso.");
 		} catch (NegocioException e) {
 			FacesUtil.addErrorMessage(e.getMessage());
-		}*/
+		}
 	}
 
 	public Fabricante getFabricanteSelecionado() {
