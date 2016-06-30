@@ -20,7 +20,7 @@ public class FabricanteDAO implements Serializable {
 	private EntityManager em;
 
 	public void salvar(Fabricante fabricante) {
-		em.persist(fabricante);
+		em.merge(fabricante);
 	}
 
 	@SuppressWarnings("unchecked")
