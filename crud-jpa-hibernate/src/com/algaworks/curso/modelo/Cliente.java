@@ -19,6 +19,7 @@ public class Cliente {
 	private Integer idade;
 	private String Sexo;
 	private String profissao;
+	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataNascimento;
 	
